@@ -15,16 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="socketclient\socketclient.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <ClCompile Include="01_排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="socketclient\socketclient.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="socketclient\socketclient_test.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="01_排序.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

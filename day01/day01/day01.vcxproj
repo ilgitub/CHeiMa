@@ -19,10 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="01_排序.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="01_排序.h" />
+    <ClCompile Include="09_指针是一种数据类型.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

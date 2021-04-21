@@ -23,10 +23,15 @@ int main(void)
 	char buf8[] = "dadsadasda";
 	//strlen:测字符串长度，不包含数字0，字符'\0'
 	//sizeof:测数组长度，包含数字0，字符'\0'
+	printf("buf8:%d\n", buf8[strlen(buf8)]);//空字符，值0
 
 	printf("strlen=%d,sizeof=%d\n",strlen(buf8),sizeof(buf8));
 	char buf9[100] = "dadsadasda";
 	printf("strlen=%d,sizeof=%d\n", strlen(buf9), sizeof(buf9));
+
+	printf("test");
+	char str[] = "\0129";
+	printf("%s\n",str);
 
 	system("pause");
 	return 0;

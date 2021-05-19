@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 
-int main(void)
+int main0(void)
 {
 	/*
 	* c语言没有字符串类型，通过字符数组模拟
@@ -33,6 +34,52 @@ int main(void)
 	char str[] = "\0129";
 	printf("%s\n",str);
 
+	system("pause");
+	return 0;
+}
+
+int main()
+{
+	char buf[] = "dasdsada";
+	char* p = NULL;
+
+	//[]方式
+	int i = 0;
+	int n = strlen(buf);
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%c",buf[i]);
+	}
+	printf("\n===================\n");
+	//指针方式
+	//数组名字为数组首元素地址
+	p = buf; 
+	for ( i = 0; i < n; i++)
+	{
+		printf("%c",p[i]);
+	}
+	printf("\n===================\n");
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%c", *(p+i));
+	}
+	printf("\n===================\n");
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%c", *(buf + i));
+	}
+	printf("\n===================\n");
+
+	//P和buf完全等价吗？
+	//p++OK
+	//buf++NOK,buf只是一个常量，不能更改
+
+
+
+	printf("\n");
 	system("pause");
 	return 0;
 }

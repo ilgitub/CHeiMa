@@ -1,3 +1,2 @@
-﻿  06_字符串的初始化.c
-D:\Code\CHeiMa\CHeiMa\day02\Project2\Project2\06_字符串的初始化.c(26,33): warning C4013: “strlen”未定义；假设外部返回 int
+﻿  09_两头堵模型.c
   Project2.vcxproj -> D:\Code\CHeiMa\CHeiMa\day02\Project2\Debug\Project2.exe

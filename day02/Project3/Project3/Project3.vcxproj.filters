@@ -18,5 +18,8 @@
     <ClCompile Include="02_const的使用.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="02_const_val.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

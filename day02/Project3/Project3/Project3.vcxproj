@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="02_const_val.c" />
     <ClCompile Include="02_const的使用.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

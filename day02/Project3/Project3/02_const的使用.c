@@ -1,5 +1,41 @@
 #include<stdio.h>
 #include<stdlib.h>
+
+typedef struct MyStruct
+{
+	int a;
+	int b;
+}MyStruct;
+
+void fun(MyStruct* p)
+{
+	//指针能变
+	//指针指向的内存也可以变
+	//p = NULL;
+	p->a = 10;//ok
+}
+
+void fun1(MyStruct const* p)
+{
+	//p=NULL;//ok
+	//p->a = 10;//err
+}
+
+void fun3(MyStruct* const p)
+{
+	//p = NULL;//err
+	p->a = 1;//ok
+
+}
+
+void fun4(const MyStruct* const p)
+{
+	//p = NULL;//err
+	//p->a=10;//err
+	MyStruct tmp;
+	tmp.a = p->a;//p只读
+}
+
 int main(void)
 {
 	//const修饰一个变量为只读
@@ -19,8 +55,14 @@ int main(void)
 	p2[0] = '1';//ok
 	//p2 = "dadsa";//error
 
-	const char* const p2 = buf;
+	//p3为只读，指向不能变，指向的内存也不能变
+	const char* const p3 = buf;
+	//p3[0] = '1';//error
+	//p3 = "dsad";//error
 
+	//如何引用另外.c中的const变量
+	extern const int ac;//不能赋值只能声明
+	printf("a=%d\n",ac);
 
 	system("pause");
 	return 0;
